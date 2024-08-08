@@ -10,6 +10,7 @@ License: BSD
 import sys
 
 import sketchingpy
+import sketchingpy.sketch2dapp
 
 NUM_ARGS = 2
 USAGE_STR = 'USAGE: python draw_berkeley_bart.py input_loc output_loc'
