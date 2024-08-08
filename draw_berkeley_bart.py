@@ -10,7 +10,6 @@ License: BSD
 import sys
 
 import sketchingpy
-import sketchingpy.sketch2dapp
 
 NUM_ARGS = 2
 USAGE_STR = 'USAGE: python draw_berkeley_bart.py input_loc output_loc'
@@ -225,7 +224,7 @@ class StationVizPresenter:
         self._sketch.pop_transform()
 
     def _get_line_length(self, max_value, count):
-        return LINE_MIN_LEN
+        return (LINE_MAX_LEN - LINE_MIN_LEN) / max_value * count + LINE_MIN_LEN
 
 
 def main():
